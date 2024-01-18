@@ -11,7 +11,7 @@ library(binom)
 
 ######### INPUT YOUR INFORMATION HERE #########
 mydata <- YOUR_DATASET_NAME
-by_variable <- YOUR_VARIABLE_NAME # The columns of your table 1 are defined by levels of this variable
+mydata$by_variable <- multianalysis$case # The columns of your table 1 are defined by levels of this variable
 n0 <- table(mydata$by_variable)[1]
 n1 <- table(mydata$by_variable)[2]
 binary_variables <- c("sex", "mwash_ge1day", "income_c20", "hbp_med34","lipdrug", "fh_db") # List all your dichotomous variables here exactly the way they appear in the dataset
